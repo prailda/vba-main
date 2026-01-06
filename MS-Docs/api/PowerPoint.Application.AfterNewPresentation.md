@@ -1,0 +1,61 @@
+---
+title: Application.AfterNewPresentation event (PowerPoint)
+keywords: vbapp10.chm621020
+f1_keywords:
+- vbapp10.chm621020
+api_name:
+- PowerPoint.Application.AfterNewPresentation
+ms.assetid: d95bb247-2ebd-263f-d6b5-9918204b9130
+ms.date: 06/08/2017
+ms.localizationpriority: medium
+---
+
+
+# Application.AfterNewPresentation event (PowerPoint)
+
+Occurs after a presentation is created.
+
+
+## Syntax
+
+_expression_. `AfterNewPresentation`( `_Pres_` )
+
+ _expression_ An expression that returns an **[Application](PowerPoint.Application.md)** object.
+
+
+## Parameters
+
+
+
+|Name|Required/Optional|Data type|Description|
+|:-----|:-----|:-----|:-----|
+| _Pres_|Required|**Presentation**|Name of the presentation.|
+
+## Example
+
+This example uses the **RGB** function to set the slide master background color for the new presentation to salmon pink, and then applies the third color scheme to the new presentation.
+
+
+```vb
+Private Sub App_AfterNewPresentation(ByVal Pres As Presentation)
+
+    With Pres
+
+        Set CS3 = .ColorSchemes(3)
+
+        CS3.Colors(ppBackground).RGB = RGB(240, 115, 100)
+
+        .SlideMaster.ColorScheme = CS3
+
+    End With
+
+End Sub
+```
+
+
+## See also
+
+
+[Application Object](PowerPoint.Application.md)
+
+[!include[Support and feedback](~/includes/feedback-boilerplate.md)]

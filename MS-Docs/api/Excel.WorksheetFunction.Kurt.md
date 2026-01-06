@@ -1,0 +1,56 @@
+---
+title: WorksheetFunction.Kurt method (Excel)
+keywords: vbaxl10.chm137226
+f1_keywords:
+- vbaxl10.chm137226
+api_name:
+- Excel.WorksheetFunction.Kurt
+ms.assetid: 46ff116f-9d74-e59c-d238-4a3c6d55677a
+ms.date: 05/24/2019
+ms.localizationpriority: medium
+---
+
+
+# WorksheetFunction.Kurt method (Excel)
+
+Returns the kurtosis of a data set. Kurtosis characterizes the relative peakedness or flatness of a distribution compared with the normal distribution. Positive kurtosis indicates a relatively peaked distribution. Negative kurtosis indicates a relatively flat distribution.
+
+
+## Syntax
+
+_expression_.**Kurt** (_Arg1_, _Arg2_, _Arg3_, _Arg4_, _Arg5_, _Arg6_, _Arg7_, _Arg8_, _Arg9_, _Arg10_, _Arg11_, _Arg12_, _Arg13_, _Arg14_, _Arg15_, _Arg16_, _Arg17_, _Arg18_, _Arg19_, _Arg20_, _Arg21_, _Arg22_, _Arg23_, _Arg24_, _Arg25_, _Arg26_, _Arg27_, _Arg28_, _Arg29_, _Arg30_)
+
+_expression_ A variable that represents a **[WorksheetFunction](Excel.WorksheetFunction.md)** object.
+
+
+## Parameters
+
+|Name|Required/Optional|Data type|Description|
+|:-----|:-----|:-----|:-----|
+| _Arg1 - Arg30_|Required| **Variant**|Number1, number2... - 1 to 30 arguments for which you want to calculate kurtosis. You can also use a single array or a reference to an array instead of arguments separated by commas.|
+
+## Return value
+
+**Double**
+
+
+## Remarks
+
+Arguments can either be numbers or names, arrays, or references that contain numbers.
+    
+Logical values and text representations of numbers that you type directly into the list of arguments are counted.
+    
+If an array or reference argument contains text, logical values, or empty cells, those values are ignored; however, cells with the value zero are included.
+    
+Arguments that are error values or text that cannot be translated into numbers cause errors.
+    
+If there are fewer than four data points, or if the standard deviation of the sample equals zero, **Kurt** returns the #DIV/0! error value.
+    
+Kurtosis is defined as follows, where _s_ is the sample standard deviation:
+
+> ![Formula](../images/awfkurt_ZA06051177.gif)
+    
+
+
+
+[!include[Support and feedback](~/includes/feedback-boilerplate.md)]

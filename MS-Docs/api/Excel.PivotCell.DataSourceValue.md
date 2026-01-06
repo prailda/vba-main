@@ -1,0 +1,42 @@
+---
+title: PivotCell.DataSourceValue property (Excel)
+keywords: vbaxl10.chm692087
+f1_keywords:
+- vbaxl10.chm692087
+api_name:
+- Excel.PivotCell.DataSourceValue
+ms.assetid: 99cd270c-775c-3cca-99dd-1a2864b872b2
+ms.date: 05/04/2019
+ms.localizationpriority: medium
+---
+
+
+# PivotCell.DataSourceValue property (Excel)
+
+Returns the value last retrieved from the data source for edited cells in a PivotTable report. Read-only.
+
+
+## Syntax
+
+_expression_.**DataSourceValue**
+
+_expression_ A variable that represents a **[PivotCell](Excel.PivotCell.md)** object.
+
+
+## Return value
+
+**Variant**
+
+
+## Remarks
+
+Whenever a cell in the values area of a PivotTable report is edited, the **DataSourceValue** property will hold the value that was last retrieved from the data source before editing took place. For PivotTable report value cells that have not been edited, or for which the data source value has not been explicitly retrieved, this property will return **NULL**. 
+
+For PivotTable reports with OLAP data sources, the value of the **DataSourceValue** property is retrieved from a separate connection to ensure that it does not contain the value of any writeback operations that the user might have made.
+
+Reading the **DataSourceValue** property for cells that are outside the values area of a PivotTable report generates a run-time error.
+
+
+
+
+[!include[Support and feedback](~/includes/feedback-boilerplate.md)]

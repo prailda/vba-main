@@ -1,0 +1,59 @@
+---
+title: PivotField.AddPageItem method (Excel)
+keywords: vbaxl10.chm240136
+f1_keywords:
+- vbaxl10.chm240136
+api_name:
+- Excel.PivotField.AddPageItem
+ms.assetid: c7f63c9f-9ad2-fcd9-13de-e9e46c40b8dc
+ms.date: 05/04/2019
+ms.localizationpriority: medium
+---
+
+
+# PivotField.AddPageItem method (Excel)
+
+Adds an additional item to a multiple item page field.
+
+
+## Syntax
+
+_expression_.**AddPageItem** (_Item_, _ClearList_)
+
+_expression_ A variable that represents a **[PivotField](Excel.PivotField.md)** object.
+
+
+## Parameters
+
+|Name|Required/Optional|Data type|Description|
+|:-----|:-----|:-----|:-----|
+| _Item_|Required| **String**| Source name of a **[PivotItem](excel.pivotitem.md)** object, corresponding to the specific Online Analytical Processing (OLAP) member unique name.|
+| _ClearList_|Optional| **Variant**|If **False** (default), adds a page item to the existing list. If **True**, deletes all current items and adds _Item_.|
+
+## Remarks
+
+To avoid run-time errors, the data source must be an OLAP source, the field chosen must currently be in the page position, and the **[EnableMultiplePageItems](Excel.PivotField.EnableMultiplePageItems.md)** property must be set to **True**.
+
+
+## Example
+
+In this example, Microsoft Excel adds a page item with a source name titled "[Product].[All Products].[Food].[Eggs]". This example assumes that an OLAP PivotTable exists on the active worksheet.
+
+```vb
+Sub UseAddPageItem() 
+ 
+ ' The source is an OLAP database and you can manually reorder items. 
+ ActiveSheet.PivotTables(1).CubeFields("[Product]"). _ 
+ EnableMultiplePageItems = True 
+ 
+ ' Add the page item titled "[Product].[All Products].[Food].[Eggs]". 
+ ActiveSheet.PivotTables(1).PivotFields("[Product]").AddPageItem ( _ 
+ "[Product].[All Products].[Food].[Eggs]") 
+ 
+End Sub
+```
+
+
+
+
+[!include[Support and feedback](~/includes/feedback-boilerplate.md)]

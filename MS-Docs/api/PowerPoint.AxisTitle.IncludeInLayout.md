@@ -1,0 +1,33 @@
+---
+title: AxisTitle.IncludeInLayout property (PowerPoint)
+api_name:
+- PowerPoint.AxisTitle.IncludeInLayout
+ms.assetid: 09aa3c00-1484-c74c-5a96-2e928155e19d
+ms.date: 06/08/2017
+ms.localizationpriority: medium
+---
+
+
+# AxisTitle.IncludeInLayout property (PowerPoint)
+
+ **True** if an axis title will occupy the chart layout space when a chart layout is being determined. The default is **True**. Read/write **Boolean**.
+
+
+## Syntax
+
+_expression_. `IncludeInLayout`
+
+ _expression_ An expression that returns a '[AxisTitle](PowerPoint.AxisTitle.md)' object.
+
+
+## Remarks
+
+This property does not affect whether a chart is in autolayout mode or not. If the user adds a title by using the **Above Chart** command, the chart will resize smaller, as in previous versions of Microsoft Office. If the user then removes the title or selects one of the overlay title options, the chart will resize larger, as if the title were not on the chart.
+
+
+## See also
+
+
+[AxisTitle Object](PowerPoint.AxisTitle.md)
+
+[!include[Support and feedback](~/includes/feedback-boilerplate.md)]

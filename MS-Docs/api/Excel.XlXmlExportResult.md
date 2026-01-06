@@ -1,0 +1,22 @@
+---
+title: XlXmlExportResult enumeration (Excel)
+api_name:
+- Excel.XlXmlExportResult
+ms.assetid: 0795a88c-41d0-8566-f644-2a886e451451
+ms.date: 06/08/2017
+ms.localizationpriority: medium
+---
+
+
+# XlXmlExportResult enumeration (Excel)
+
+Specifies the results of the save or export operation.
+
+
+
+|Name|Value|Description|
+|:-----|:-----|:-----|
+| **xlXmlExportSuccess**|0|The XML data file was successfully exported.|
+| **xlXmlExportValidationFailed**|1|The contents of the XML data file don't match the specified schema map.|
+
+[!include[Support and feedback](~/includes/feedback-boilerplate.md)]

@@ -1,0 +1,36 @@
+---
+title: ThreeDFormat.RotationZ property (PowerPoint)
+keywords: vbapp10.chm557032
+f1_keywords:
+- vbapp10.chm557032
+api_name:
+- PowerPoint.ThreeDFormat.RotationZ
+ms.assetid: c77cc93b-9ab2-ccae-c84b-26716c152659
+ms.date: 06/08/2017
+ms.localizationpriority: medium
+---
+
+
+# ThreeDFormat.RotationZ property (PowerPoint)
+
+Returns or sets the rotation of the effects camera for the specified **ThreeDFormat** object, in degrees. Read/write.
+
+
+## Syntax
+
+_expression_. `RotationZ`
+
+_expression_ A variable that represents a [ThreeDFormat](PowerPoint.ThreeDFormat.md) object.
+
+
+## Return value
+
+Single
+
+
+## See also
+
+
+[ThreeDFormat Object](PowerPoint.ThreeDFormat.md)
+
+[!include[Support and feedback](~/includes/feedback-boilerplate.md)]

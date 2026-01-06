@@ -1,0 +1,36 @@
+---
+title: Presentation.GetWorkflowTasks method (PowerPoint)
+keywords: vbapp10.chm583098
+f1_keywords:
+- vbapp10.chm583098
+api_name:
+- PowerPoint.Presentation.GetWorkflowTasks
+ms.assetid: d589e00c-3f1b-77e6-d021-b67b4d045c9a
+ms.date: 06/08/2017
+ms.localizationpriority: medium
+---
+
+
+# Presentation.GetWorkflowTasks method (PowerPoint)
+
+ Returns the Microsoft Office **WorkflowTasks** collection.
+
+
+## Syntax
+
+_expression_. `GetWorkflowTasks`
+
+ _expression_ An expression that returns a [Presentation](PowerPoint.Presentation.md) object.
+
+
+## Return value
+
+WorkFlowTasks
+
+
+## See also
+
+
+[Presentation Object](PowerPoint.Presentation.md)
+
+[!include[Support and feedback](~/includes/feedback-boilerplate.md)]

@@ -1,0 +1,49 @@
+---
+title: WorksheetFunction.Large method (Excel)
+keywords: vbaxl10.chm137229
+f1_keywords:
+- vbaxl10.chm137229
+api_name:
+- Excel.WorksheetFunction.Large
+ms.assetid: d4695008-a800-955d-ce41-8988d1a869ab
+ms.date: 05/24/2019
+ms.localizationpriority: medium
+---
+
+
+# WorksheetFunction.Large method (Excel)
+
+Returns the k-th largest value in a data set. Use this function to select a value based on its relative standing. For example, you can use **Large** to return the highest, runner-up, or third-place score.
+
+
+## Syntax
+
+_expression_.**Large** (_Arg1_, _Arg2_)
+
+_expression_ A variable that represents a **[WorksheetFunction](Excel.WorksheetFunction.md)** object.
+
+
+## Parameters
+
+|Name|Required/Optional|Data type|Description|
+|:-----|:-----|:-----|:-----|
+| _Arg1_|Required| **Variant**|Array - the array or range of data for which you want to determine the k-th largest value.|
+| _Arg2_|Required| **Double**|K - the position (from the largest) in the array or cell range of data to return.|
+
+## Return value
+
+**Double**
+
+
+## Remarks
+
+If array is empty, **Large** returns the #NUM! error value.
+    
+If k ≤ 0 or if k is greater than the number of data points, **Large** returns the #NUM! error value.
+    
+If n is the number of data points in a range, LARGE(array,1) returns the largest value, and LARGE(array,n) returns the smallest value.
+
+
+
+
+[!include[Support and feedback](~/includes/feedback-boilerplate.md)]

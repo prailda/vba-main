@@ -1,0 +1,52 @@
+---
+title: FillFormat.Parent property (PowerPoint)
+keywords: vbapp10.chm552001
+f1_keywords:
+- vbapp10.chm552001
+api_name:
+- PowerPoint.FillFormat.Parent
+ms.assetid: b81440f3-aa91-7a67-0a61-a30cf40e2c29
+ms.date: 06/08/2017
+ms.localizationpriority: medium
+---
+
+
+# FillFormat.Parent property (PowerPoint)
+
+Returns the parent object for the specified object.
+
+
+## Syntax
+
+_expression_.**Parent**
+
+_expression_ A variable that represents a **[FillFormat](powerpoint.fillformat.md)** object.
+
+
+## Return value
+
+Object
+
+
+## Example
+
+This example adds an oval containing text to slide one in the active presentation and rotates the oval and the text 45 degrees. The parent object for the text frame is the **Shape** object that contains the text.
+
+
+```vb
+Set myShapes = ActivePresentation.Slides(1).Shapes
+
+With myShapes.AddShape(Type:=msoShapeOval, Left:=50, _
+        Top:=50, Width:=300, Height:=150).TextFrame
+    .TextRange.Text = "Test text"
+    .Parent.Rotation = 45
+End With
+```
+
+
+## See also
+
+
+[FillFormat Object](PowerPoint.FillFormat.md)
+
+[!include[Support and feedback](~/includes/feedback-boilerplate.md)]
