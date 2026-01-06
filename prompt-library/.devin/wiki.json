@@ -1,7 +1,7 @@
 {
   "repo_notes": [
     {
-      "content": "This is a comprehensive prompt library for Software Engineering AI Agents. The Wiki provides guidance on prompt design principles, agent workflows, and best practices. Content is based on real-world system prompts, GitHub Cookbook strategies, and professional developer guidelines. Focus on actionable instructions rather than technical implementations of agent systems."
+      "content": "This is a comprehensive prompt library for Software Engineering AI Agents. The Wiki provides guidance on prompt design principles, agent workflows, and best practices. Content is based on real-world system prompts, curated patterns from GitHub's AI integration best practices, and professional developer guidelines. Focus on actionable instructions rather than technical implementations of agent systems."
     }
   ],
   "pages": [

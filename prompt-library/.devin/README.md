@@ -144,9 +144,8 @@ Modify the `parent` field to reorganize pages:
 
 ## Related Files
 
-- `prompt-library/README.md` - Main repository documentation
-- `prompt-library/overview.md` - Repository overview
-- `.github/copilot-instructions.md` - Task context for this setup
+- `README.md` - Main repository documentation
+- `overview.md` - Repository overview
 
 ## Notes
 
