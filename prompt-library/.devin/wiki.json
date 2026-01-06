@@ -1,156 +1,256 @@
 {
   "repo_notes": [
     {
-      "content": "Based on System Prompts collection and GitHub Cookbook strategies, focused exclusively on Software Engineering domains."
+      "content": "This is a comprehensive prompt library for Software Engineering AI Agents. The Wiki provides guidance on prompt design principles, agent workflows, and best practices. Content is based on real-world system prompts, curated patterns from GitHub's AI integration best practices, and professional developer guidelines. Focus on actionable instructions rather than technical implementations of agent systems."
     }
   ],
   "pages": [
     {
       "title": "SE Agent Engineering Guide",
-      "purpose": "Comprehensive guide for designing system prompts and instructions for AI Agents specialized in Software Engineering. Covers the full SDLC: architecture, implementation, analysis, and maintenance.",
+      "purpose": "Introduction to designing system prompts and instructions for AI Agents specialized in Software Engineering. Provides an overview of the prompt library structure, key concepts, and navigation guidance for the Wiki.",
       "page_notes": [
         {
-          "content": ""
+          "content": "Reference overview.md and README.md files. Include a visual diagram (Mermaid) of the Wiki structure."
         }
       ]
     },
     {
-      "title": "Prompting Principles for Engineers",
-      "purpose": "Define core principles for engineering prompts: setting Personas (e.g., Senior Architect, QA Engineer), establishing constraints (Clean Code, SOLID), and defining output formats (Code blocks, Diff, JSON, Mermaid diagrams).",
+      "title": "Prompt Design Fundamentals",
+      "purpose": "Core principles of prompt engineering for software engineering tasks: persona definition, constraint setting, output format specification, and context management strategies.",
       "parent": "SE Agent Engineering Guide",
       "page_notes": [
         {
-          "content": ""
+          "content": "Reference prompt-engineering-dotnet.md, chain-of-thought-prompting.md, and custom-instructions-file-guidelines.md."
         }
       ]
     },
     {
-      "title": "Architecture & System Design",
-      "purpose": "Guidelines for instructing agents to design high-level software structures. Focus on system boundaries, technology choices, and trade-off analysis (e.g., Monolith vs. Microservices).",
+      "title": "Persona and Role Definition",
+      "purpose": "Techniques for defining AI agent personas: Senior Architect, QA Engineer, Security Auditor. How persona choice affects agent behavior and output quality.",
+      "parent": "Prompt Design Fundamentals",
+      "page_notes": [
+        {
+          "content": "Reference agent files with persona definitions like principal-software-engineer-agent.md, csharp-expert-agent.md."
+        }
+      ]
+    },
+    {
+      "title": "Constraint and Rule Systems",
+      "purpose": "Establishing constraints for agents: Clean Code principles, SOLID, DRY, and language-specific idioms. Enforcing coding standards through prompt instructions.",
+      "parent": "Prompt Design Fundamentals",
+      "page_notes": [
+        {
+          "content": "Reference ddd-systems-&-net-guidelines.md, generic-code-review-instructions.md, and constitution.md."
+        }
+      ]
+    },
+    {
+      "title": "Output Format Specifications",
+      "purpose": "Defining output formats: code blocks, diffs, JSON schemas, Mermaid diagrams. Techniques for structured responses and parsing agent outputs.",
+      "parent": "Prompt Design Fundamentals",
+      "page_notes": [
+        {
+          "content": "Reference AI-assisted JSON Schema Creation and Mapping.md, understanding-openai-functions.md."
+        }
+      ]
+    },
+    {
+      "title": "Architecture and Design Agents",
+      "purpose": "Designing agents that assist with high-level software architecture: system boundaries, technology selection, trade-off analysis, and architectural decision-making.",
       "parent": "SE Agent Engineering Guide",
       "page_notes": [
         {
-          "content": ""
+          "content": "Reference arch-agent.md, blueprint-mode-agent.md, architecture-blueprint-generator-prompt.md."
         }
       ]
     },
     {
-      "title": "Designing Architecture",
-      "purpose": "Crafting prompts for generating architectural patterns. Instructions for creating diagrams (C4 model, UML), defining infrastructure requirements, and documenting Architectural Decision Records (ADRs).",
-      "parent": "Architecture & System Design",
+      "title": "System Architecture Prompts",
+      "purpose": "Crafting prompts for generating architectural patterns, C4 diagrams, UML models, and Architectural Decision Records (ADRs).",
+      "parent": "Architecture and Design Agents",
       "page_notes": [
         {
-          "content": ""
+          "content": "Reference se-system-architecture-reviewer-agent.md, folder-structure-blueprint-generator-prompt.md."
         }
       ]
     },
     {
-      "title": "Data Flow Modeling",
-      "purpose": "Techniques for agents to design data movement. Instructions for defining API contracts (OpenAPI/Swagger), database schemas (ERD), event-driven flows, and state management strategies.",
-      "parent": "Architecture & System Design",
+      "title": "API and Data Flow Design",
+      "purpose": "Agent instructions for designing APIs (OpenAPI/Swagger), database schemas, event-driven architectures, and state management strategies.",
+      "parent": "Architecture and Design Agents",
       "page_notes": [
         {
-          "content": ""
+          "content": "Reference Understanding Data Modeling.md, create-specification-prompt.md."
         }
       ]
     },
     {
-      "title": "Identifying Key Components",
-      "purpose": "Strategies for breaking down requirements into modular components. Prompts for defining interfaces, dependencies, and responsibility isolation (Single Responsibility Principle) within the system.",
-      "parent": "Architecture & System Design",
-      "page_notes": [
-        {
-          "content": ""
-        }
-      ]
-    },
-    {
-      "title": "Algorithmic Logic & Strategy",
-      "purpose": "Designing agents capable of solving complex computational problems. Focus on Time/Space complexity (Big O), edge case identification, and pseudocode generation.",
+      "title": "Planning and Task Decomposition",
+      "purpose": "Agents for breaking down complex tasks: epic breakdown, feature decomposition, implementation planning, and test planning strategies.",
       "parent": "SE Agent Engineering Guide",
       "page_notes": [
         {
-          "content": ""
+          "content": "Reference plan-agent.md, planner-agent.md, breakdown-epic-arch-prompt.md, breakdown-epic-pm-prompt.md."
         }
       ]
     },
     {
-      "title": "Algorithm Design Prompts",
-      "purpose": "Using Chain-of-Thought (CoT) to guide agents through algorithm creation. Instructions for optimization, sorting, searching, and selecting data structures (HashMaps, Trees, Graphs) appropriate for the task.",
-      "parent": "Algorithmic Logic & Strategy",
+      "title": "Epic and Feature Breakdown",
+      "purpose": "Prompts for decomposing large requirements into manageable tasks. PRD generation, user story creation, and acceptance criteria definition.",
+      "parent": "Planning and Task Decomposition",
       "page_notes": [
         {
-          "content": ""
+          "content": "Reference prd-agent.md, breakdown-feature-prd-prompt.md, breakdown-feature-implementation-prompt.md."
         }
       ]
     },
     {
-      "title": "Implementation & Generation",
-      "purpose": "Best practices for Code Generation agents. Managing context windows, enforcing language-specific idioms (Pythonic, Rust safety), and generating boilerplate vs. business logic.",
+      "title": "Implementation Planning",
+      "purpose": "Creating implementation plans from specifications: task sequencing, dependency identification, and milestone definition.",
+      "parent": "Planning and Task Decomposition",
+      "page_notes": [
+        {
+          "content": "Reference implementation-plan-agent.md, create-implementation-plan-prompt.md, task-plan-implementation-instructions.md."
+        }
+      ]
+    },
+    {
+      "title": "Code Implementation Agents",
+      "purpose": "Best practices for code generation agents: context window management, language-specific idioms, boilerplate vs. business logic generation.",
       "parent": "SE Agent Engineering Guide",
       "page_notes": [
         {
-          "content": ""
+          "content": "Reference implement.md, software-engineer-agent-v1-agent.md, spec-driven-workflow-v1.md."
         }
       ]
     },
     {
-      "title": "Code Generation Strategies",
-      "purpose": "Detailed prompting techniques for writing executable code. Includes instructions for adding comments, type hinting, error handling blocks, and unit test scaffolding alongside implementation.",
-      "parent": "Implementation & Generation",
+      "title": "Language-Specific Prompts",
+      "purpose": "Tailored instructions for different programming languages and frameworks: C#/.NET, Python, TypeScript, PowerShell.",
+      "parent": "Code Implementation Agents",
       "page_notes": [
         {
-          "content": ""
+          "content": "Reference csharp-development.md, python-instructions.md, typescript-5-es2022-instructions.md, powershell-instructions.md."
         }
       ]
     },
     {
-      "title": "Analysis & Quality Assurance",
-      "purpose": "Configuring agents to act as Code Reviewers and QA engineers. Focus on static analysis, security auditing, and performance profiling.",
+      "title": "Test-Driven Development Agents",
+      "purpose": "TDD workflow agents: Red-Green-Refactor cycle implementation, test scaffolding, and test coverage strategies.",
+      "parent": "Code Implementation Agents",
+      "page_notes": [
+        {
+          "content": "Reference tdd-red-agent.md, tdd-green-agent.md, tdd-refactor-agent.md, breakdown-test-prompt.md."
+        }
+      ]
+    },
+    {
+      "title": "Analysis and Quality Assurance",
+      "purpose": "Configuring agents as code reviewers and QA engineers: static analysis, security auditing, performance profiling, and best practice enforcement.",
       "parent": "SE Agent Engineering Guide",
       "page_notes": [
         {
-          "content": ""
+          "content": "Reference analyze.md, generic-code-review-instructions.md, critical-thinking-agent.md."
         }
       ]
     },
     {
-      "title": "Static Code Analysis",
-      "purpose": "Prompts for detecting anti-patterns, code smells, potential race conditions, and security vulnerabilities (OWASP Top 10). Instructions for suggesting refactoring improvements.",
-      "parent": "Analysis & Quality Assurance",
+      "title": "Code Review Agents",
+      "purpose": "Prompts for automated code review: detecting anti-patterns, code smells, security vulnerabilities (OWASP Top 10), and suggesting refactoring improvements.",
+      "parent": "Analysis and Quality Assurance",
       "page_notes": [
         {
-          "content": ""
+          "content": "Reference ai-prompt-engineering-safety-review-prompt.md, dotnet-design-pattern-review-prompt.md."
         }
       ]
     },
     {
-      "title": "Error Fixing & Debugging",
-      "purpose": "Workflows for debugging agents. Inputting stack traces and logs to generate root cause analysis. Prompts for creating patches that fix bugs without introducing regressions.",
-      "parent": "Analysis & Quality Assurance",
+      "title": "Debugging and Error Analysis",
+      "purpose": "Debugging workflow agents: stack trace analysis, root cause identification, and patch generation without introducing regressions.",
+      "parent": "Analysis and Quality Assurance",
       "page_notes": [
         {
-          "content": ""
+          "content": "Reference debug-agent.md, clarify.md."
         }
       ]
     },
     {
-      "title": "Knowledge Transfer & Documentation",
-      "purpose": "Designing agents for explaining codebases. Strategies for bridging the gap between legacy code and current developers.",
+      "title": "Documentation and Knowledge Transfer",
+      "purpose": "Agents for generating documentation: README files, API docs, code explanations, and knowledge base articles.",
       "parent": "SE Agent Engineering Guide",
       "page_notes": [
         {
-          "content": ""
+          "content": "Reference se-technical-writer-agent.md, documentation-writer-prompt.md, create-oo-component-documentation-prompt.md."
         }
       ]
     },
     {
       "title": "Code Explanation Techniques",
-      "purpose": "Prompts for summarizing complex logic into natural language. Generating docstrings, README files, and 'Explain Like I'm 5' summaries for non-technical stakeholders.",
-      "parent": "Knowledge Transfer & Documentation",
+      "purpose": "Prompts for summarizing complex logic into natural language: docstrings, inline comments, and 'Explain Like I'm 5' summaries for stakeholders.",
+      "parent": "Documentation and Knowledge Transfer",
       "page_notes": [
         {
-          "content": ""
+          "content": "Reference csharp-docs-prompt.md, convert-plaintext-to-md-prompt.md."
+        }
+      ]
+    },
+    {
+      "title": "AI Agent Tool Ecosystem",
+      "purpose": "Overview of tools, platforms, and frameworks for AI-assisted development: IDE integrations, MCP servers, and agent platforms.",
+      "parent": "SE Agent Engineering Guide",
+      "page_notes": [
+        {
+          "content": "Reference Top AI Tools.md, get-started-mcp.md, Agent Skills.md."
+        }
+      ]
+    },
+    {
+      "title": "IDE Integrations",
+      "purpose": "Instructions for AI agents integrated into development environments: GitHub Copilot, Cursor, Windsurf, VS Code agents.",
+      "parent": "AI Agent Tool Ecosystem",
+      "page_notes": [
+        {
+          "content": "Reference Cursor Prompts/, Windsurf/, VSCode Agent/, copilot-custom-instructions.md."
+        }
+      ]
+    },
+    {
+      "title": "Standalone AI Agents",
+      "purpose": "Prompts and configurations for standalone AI agent platforms: Devin AI, Lovable, Replit, and others.",
+      "parent": "AI Agent Tool Ecosystem",
+      "page_notes": [
+        {
+          "content": "Reference Devin AI/, Lovable/, Replit/, Anthropic/ directories."
+        }
+      ]
+    },
+    {
+      "title": "Research and Reasoning Agents",
+      "purpose": "Agents designed for deep research, critical analysis, and complex reasoning tasks in software engineering contexts.",
+      "parent": "SE Agent Engineering Guide",
+      "page_notes": [
+        {
+          "content": "Reference research_lead_agent.md, research-technical-spike-agent.md, thinking-beast-mode-agent.md."
+        }
+      ]
+    },
+    {
+      "title": "Advanced Reasoning Techniques",
+      "purpose": "Chain-of-Thought (CoT), Tree-of-Thought, and other advanced prompting techniques for complex problem-solving.",
+      "parent": "Research and Reasoning Agents",
+      "page_notes": [
+        {
+          "content": "Reference Chain of Thought Prompting.md, chain-of-thought-prompting.md, zero-shot-learning.md."
+        }
+      ]
+    },
+    {
+      "title": "Safety and Responsible AI",
+      "purpose": "Best practices for AI safety in software engineering: content filtering, security considerations, and ethical guidelines for agent behavior.",
+      "parent": "SE Agent Engineering Guide",
+      "page_notes": [
+        {
+          "content": "Reference ai-prompt-engineering-safety-best-practices.md, content-filtering.md, evaluate-safety.md, se-responsible-ai-code-agent.md."
         }
       ]
     }
