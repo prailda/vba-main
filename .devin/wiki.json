@@ -1,0 +1,158 @@
+{
+  "repo_notes": [
+    {
+      "content": "Based on System Prompts collection and GitHub Cookbook strategies, focused exclusively on Software Engineering domains."
+    }
+  ],
+  "pages": [
+    {
+      "title": "SE Agent Engineering Guide",
+      "purpose": "Comprehensive guide for designing system prompts and instructions for AI Agents specialized in Software Engineering. Covers the full SDLC: architecture, implementation, analysis, and maintenance.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Prompting Principles for Engineers",
+      "purpose": "Define core principles for engineering prompts: setting Personas (e.g., Senior Architect, QA Engineer), establishing constraints (Clean Code, SOLID), and defining output formats (Code blocks, Diff, JSON, Mermaid diagrams).",
+      "parent": "SE Agent Engineering Guide",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Architecture & System Design",
+      "purpose": "Guidelines for instructing agents to design high-level software structures. Focus on system boundaries, technology choices, and trade-off analysis (e.g., Monolith vs. Microservices).",
+      "parent": "SE Agent Engineering Guide",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Designing Architecture",
+      "purpose": "Crafting prompts for generating architectural patterns. Instructions for creating diagrams (C4 model, UML), defining infrastructure requirements, and documenting Architectural Decision Records (ADRs).",
+      "parent": "Architecture & System Design",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Data Flow Modeling",
+      "purpose": "Techniques for agents to design data movement. Instructions for defining API contracts (OpenAPI/Swagger), database schemas (ERD), event-driven flows, and state management strategies.",
+      "parent": "Architecture & System Design",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Identifying Key Components",
+      "purpose": "Strategies for breaking down requirements into modular components. Prompts for defining interfaces, dependencies, and responsibility isolation (Single Responsibility Principle) within the system.",
+      "parent": "Architecture & System Design",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Algorithmic Logic & Strategy",
+      "purpose": "Designing agents capable of solving complex computational problems. Focus on Time/Space complexity (Big O), edge case identification, and pseudocode generation.",
+      "parent": "SE Agent Engineering Guide",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Algorithm Design Prompts",
+      "purpose": "Using Chain-of-Thought (CoT) to guide agents through algorithm creation. Instructions for optimization, sorting, searching, and selecting data structures (HashMaps, Trees, Graphs) appropriate for the task.",
+      "parent": "Algorithmic Logic & Strategy",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Implementation & Generation",
+      "purpose": "Best practices for Code Generation agents. Managing context windows, enforcing language-specific idioms (Pythonic, Rust safety), and generating boilerplate vs. business logic.",
+      "parent": "SE Agent Engineering Guide",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Code Generation Strategies",
+      "purpose": "Detailed prompting techniques for writing executable code. Includes instructions for adding comments, type hinting, error handling blocks, and unit test scaffolding alongside implementation.",
+      "parent": "Implementation & Generation",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Analysis & Quality Assurance",
+      "purpose": "Configuring agents to act as Code Reviewers and QA engineers. Focus on static analysis, security auditing, and performance profiling.",
+      "parent": "SE Agent Engineering Guide",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Static Code Analysis",
+      "purpose": "Prompts for detecting anti-patterns, code smells, potential race conditions, and security vulnerabilities (OWASP Top 10). Instructions for suggesting refactoring improvements.",
+      "parent": "Analysis & Quality Assurance",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Error Fixing & Debugging",
+      "purpose": "Workflows for debugging agents. Inputting stack traces and logs to generate root cause analysis. Prompts for creating patches that fix bugs without introducing regressions.",
+      "parent": "Analysis & Quality Assurance",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Knowledge Transfer & Documentation",
+      "purpose": "Designing agents for explaining codebases. Strategies for bridging the gap between legacy code and current developers.",
+      "parent": "SE Agent Engineering Guide",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Code Explanation Techniques",
+      "purpose": "Prompts for summarizing complex logic into natural language. Generating docstrings, README files, and 'Explain Like I'm 5' summaries for non-technical stakeholders.",
+      "parent": "Knowledge Transfer & Documentation",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    }
+  ]
+}
