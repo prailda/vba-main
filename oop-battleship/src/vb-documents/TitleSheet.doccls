@@ -1,0 +1,14 @@
+﻿'@Folder("Excel Objects")
+Option Explicit
+
+Private Property Get MacrosDisabledMessage() As Shape
+    Set MacrosDisabledMessage = Me.Shapes("MacrosDisabledMessage")
+End Property
+
+Public Sub HideMacrosDisabledWarning()
+    MacrosDisabledMessage.Visible = msoFalse
+End Sub
+
+Public Sub ShowMacrosDisabledWarning()
+    MacrosDisabledMessage.Visible = msoTrue
+End Sub
